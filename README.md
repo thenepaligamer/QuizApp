@@ -1,24 +1,5 @@
 # quizapp
 
-## Project setup
-```
-npm install
-```
+A simple quiz app created using Vue JS. Just hover over the cards to know about answer. More functionality to be added, such as timer, flip the cards on click, etc.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+If you want to install on your local system, just don't do it. I have no idea how to do it and can't say for sure. GG.
