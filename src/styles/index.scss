@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+$primary-font: 'Quicksand', sans-serif;
+$secondary-font: 'Nunito', sans-serif;
+$primary-bgcolor: #00B4DB;
+
+@mixin body-background {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin navbar-background{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+html {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #333;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    @include body-background;
+    text-align: center;
+}
+
+#nav{
+    @include navbar-background;
+    font-family: $primary-font;
+    padding: 30px;
+
+    a{
+        font-weight: bold;
+        color: #2c3e50;
+        text-decoration: none;
+        font-size: 1.5rem;
+            
+    }
+
+    a:hover{
+        color: #228999;
+    }
+
+    &.router-link-exact-active {
+        color: #42b983;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 1rem;
+        float: left;
+    }
+}
+
+.home{
+    font-family: $secondary-font;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+
+$primary-font: 'Quicksand', sans-serif;
+$secondary-font: 'Nunito', sans-serif;
+$primary-bgcolor: #00B4DB;
+
+h1{
+    font-family: $secondary-font;
+}
+
+.hex-card{
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+     padding:5px;
+     background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     width: 175px;
+     height: 175px;
+     //width:var(--border-width);
+     //height:var(--border-height);
+     max-height:200px;
+     max-width:200px;
+     //height: var(--height);
+     //width:var(--width);
+     //transition:transform 0.2s;
+     //position: relative;
+     //cursor:pointer;
+     float: left;
+  }
+
+  .hex-card:nth-child(2){
+      top: 200px;
+      left: 150px;
+  }
+
+  .hex-card:hover{
+      opacity: 0.4;
+  }
+
